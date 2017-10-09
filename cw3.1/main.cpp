@@ -3,6 +3,7 @@
 #include <vector>
 #include <stdexcept>
 #include <string>
+#include <sstream>
 
 
 using namespace std;
@@ -25,9 +26,14 @@ using namespace std;
       string linia;
       while (getline(plik,linia))
       {
-          cout << linia << endl;
-      };
-      plik close;
+          stringstream ss(linia); // inicjalizujemy stringstream zawartosci¹ linii
+          double _t, _x; // w tych zmiennych zapiszemy odczytane wartoœci
+          ss >> _t; // odczytujemy z linii pierwsz¹ liczbê
+          ss.ignore(); // ignorujemy przecinek
+          ss >> _x; // odczytujemy z linii drug¹ liczbê
+          cout << _t <<" "<< _x<< endl;
+      }
+      plik.close();
       return tablica;
     }
 
