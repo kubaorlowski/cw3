@@ -54,7 +54,9 @@ int main(int argc, char* argv[])
 
     vector <Probka> dane=wczytaj(argv[1]);
 
-    cout << "Minimum : " << min_element(dane,dane);
+
+
+    //cout << "Minimum : " << min_element(dane,dane);
 
 
 
