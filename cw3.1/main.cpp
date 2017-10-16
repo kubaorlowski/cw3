@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <string>
 #include <sstream>
+#include <algorithm>
 
 
 using namespace std;
@@ -40,6 +41,9 @@ using namespace std;
     //tablica push_back (probka1);
     //cout<<tablica[a].t<<endl;
 
+
+
+
 int main(int argc, char* argv[])
 {
 
@@ -49,6 +53,8 @@ int main(int argc, char* argv[])
     }
 
     vector <Probka> dane=wczytaj(argv[1]);
+
+    cout << "Minimum : " << min_element(dane,dane);
 
 
 
