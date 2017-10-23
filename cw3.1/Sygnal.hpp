@@ -10,7 +10,7 @@ public:
     void dodajProbke(const p Probka&);
     int iloscProbek();
     operator[](int i):Probka&;
-    friend std::ostream& operator<<(std::ostream& stream,sygnal:const Sygnal&);
+    friend std::ostream& operator<<(std::ostream& stream,const sygnal Sygnal&);
 
 };
 
