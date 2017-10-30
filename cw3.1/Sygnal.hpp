@@ -4,7 +4,7 @@
 class Sygnal
 {
 private:
-    std::vector<Probka> probki;
+    std::vector <Probka> probki;
 public:
     Sygnal();
     void dodajProbke(const p Probka&);
